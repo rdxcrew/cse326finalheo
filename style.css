@@ -1,0 +1,370 @@
+/* Basic Body Styling */
+body {
+    display: flex;
+    /* justify-content: center; Center horizontally */
+    /* align-items: center;     Center vertically */
+    height: 100vh;            /* Make body full viewport height */
+    margin: 0;
+  }
+  
+  /* Navigation Bar */
+.sidebar {
+    width: 50px;
+    background-image: url(Predator_Wallpaper_02_3840x2400.jpg);
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+    display: flex;                /* Enable Flexbox on the sidebar */
+    flex-direction: column;        /* Align items vertically */
+    justify-content: center;     /* Center items vertically */ 
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;                   /* Reset margin for better control */
+    width: 100%;                 /* Make sure the list takes full width */ 
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+    display: flex;                /* Enable Flexbox on list items */
+    justify-content: center;     /* Center horizontally within each list item */
+  }
+  
+  /* ... (rest of your styles for .sidebar a, .sidebar a i, etc.) ... */
+  
+  .button {
+    width: 50px; 
+    height: 50px;
+    cursor: pointer;
+  } 
+  
+  /* Content Area */
+  .content {
+    margin-left: 250px; /* Adjust for sidebar width */
+    padding: 20px;
+  }
+.button
+{
+width: 50px;
+height: 50px;
+cursor: pointer;
+}
+/* ... your existing styles ... */
+
+.trbuttons{
+    position: fixed;
+    top: 20px;  /* Adjust vertical position */
+    right: 20px; /* Adjust horizontal position */
+    display: flex;
+    gap: 20px;
+  }
+  
+  .tbutton{ 
+    padding: 8px 12px; /* Adjust button padding */
+    font-size: 14px; /* Adjust font size */
+    background-color: #e7e7e7; 
+    color: black; 
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Add rounded corners */
+    width: 50px;
+    height: 50px;
+  }
+/* ... your existing styles ... */
+
+.con{
+    margin-left: auto; /* Adjust for sidebar width */
+    padding: 20px;
+    display: flex; 
+    justify-content: center; /* Center the video */
+    align-items: center;    /* Center the video */
+    height: calc(100vh - 60px); /* Adjust as needed for top buttons */ 
+    width: 90%;
+  }
+
+  
+  #user-list {
+    width: 200px;
+    border-right: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .user {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .user:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .user-profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .user-name {
+    font-weight: bold;
+  }
+  
+  #chat-area {
+    flex-grow: 1; /* Chat area takes up remaining space */
+    padding: 10px;
+  }
+  
+  #chat-container {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    margin-bottom: 10px; /* Space for input area */
+  }
+  
+  #chat-window {
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 10px;
+    background-image: url(chatpaper2.jpg);
+  }
+  
+  .message {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  
+  .message.sent {
+    justify-content: flex-end;
+  }
+  
+  .message.received {
+    justify-content: flex-start;
+  }
+  
+  .profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .message-text {
+    background-color: #f2f2f2;
+    padding: 8px 12px;
+    border-radius: 8px;
+    max-width: 70%;
+  }
+  
+  .message.sent .message-text {
+    background-color: #cce5ff;
+   
+  }
+  
+  #input-area {
+    display: flex;
+    padding: 10px;
+  }
+  
+  #message-input {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  #send-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .emoji-button {
+    border: none;
+    background: none;
+    font-size: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  #new-chat-button {
+    padding: 5px 10px;
+    background-color: #008CBA; /* Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* margin-left: 10px; Space between buttons */
+    /* margin-bottom: 10px; */
+    border-bottom: 10px;
+  }
+  /* ... (rest of your existing CSS) ... */
+  
+  #user-list {
+    width: 200px;
+    border-right: 1px solid #ccc; 
+    /* padding: 10px; */
+    border: 1px solid #ccc; /* Add this line for the border */
+    height: 100vh;
+    justify-items: center;
+    
+  }
+  #headinhheo{
+      background-color: #008CBA;
+  }
+
+/* ... (Your existing styles) ... */
+#settingsModal{
+  height: 100vh;
+  width: 100vh;
+ 
+  
+}
+#settingsModal h3 {
+  margin-top: 15px; /* Add some space between sections */
+}
+
+#settingsModal input[type="radio"],
+#settingsModal input[type="checkbox"] {
+  margin-right: 5px; 
+}
+
+#settingsModal select {
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+/* ... Your existing CSS ... */
+
+#new-chat-button {
+  padding: 8px 12px;
+  background-color: #008CBA; /* Blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Make the button span the width */
+  margin-top: 10px; /* Add some space above the button */
+}
+/* ... Your existing CSS ... */
+
+
+
+#user-list .user-profile-pic {
+  width: 40px;             /* Make the profile picture bigger */
+  height: 40px;            
+  border-radius: 50%;      /* Make it circular */
+  margin-right: 10px;     /* Add space between the picture and name */
+}
+
+
+
+#user-list {
+  width: 200px;
+  border-right: 1px solid #ccc; 
+  border: 1px solid #ccc;
+  height: 100vh;
+  padding: 10px; /* Add padding to the user list container */
+  display: flex;  /* Enable flexbox on the user list */
+  flex-direction: column; /* Align items vertically */
+}
+
+#user-list .user {
+  border: 1px solid #ccc; 
+  padding: 10px;         
+  margin-bottom: 10px;     /* Add space between users */
+  border-radius: 5px;      
+  display: flex;          
+  align-items: center;     
+  flex-shrink: 0;        /* Prevent users from shrinking to fit */ 
+}
+
+/* ... rest of your user styles ... */ 
+
+#map {
+  width: 100%;
+  height: 100vb;
+}
+
+
+
+
+.contact-section {
+    padding : 20px;
+    text-align : center ;
+    background : #f3f3f3 ;
+    border : 1px solid red ;
+    height: 100vh;
+    width: 100vb;
+}
+
+.contact-section h2 {
+    font-size: 24px;
+    color: #333;
+    text-align : center ; 
+}
+
+.contact-form {
+    display: flex; 
+    flex-direction : column ;
+    max-width: 600px; 
+    margin : 0 auto ; 
+}
+
+.contact-form label {
+
+    text-align: left;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;  
+}
+
+.contact-form input, 
+.contact-form textarea {
+
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    width: 100%; 
+}
+
+.contact-form button {
+
+    padding: 10px 15px; 
+    color: white; 
+    background-color: #007bff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+.contact-form button:hover {
+
+    background-color: #0056b3;
+ }
+
+footer{
+
+    padding: 20px; 
+    text-align : center ; 
+    background : #333 ; 
+    color : white ; 
+   
+}
+
+.footer-content p {
+
+    margin: 5px 0; 
+    
+}

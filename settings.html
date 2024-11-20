@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <ul>
+             <li>
+             <button class="button">
+                <a href="index.html">
+                    <img src="location-dot-solid.svg" alt="Maps">
+                </a>
+             </button>
+             </li>
+             <li>
+             <button class="button">
+                <a href="chatbox.html">
+                    <img src="comment-solid.svg" alt="ChatBox">
+                </a>
+             </button>
+             </li>
+             <li>
+             <button class="button">
+                <a href="settings.html">
+                    <img src="gear-solid.svg" alt="Settings">
+                </a>
+             </button>
+             </li>
+        </ul>
+    </nav>
+    <div class="trbuttons">
+        <button class="tbutton">
+            <img src="headset-solid.svg" alt="Support">
+        </button>
+        <button class="tbutton">
+            <img src="circle-user-solid.svg" alt="profile">
+        </button>
+        <button class="tbutton">
+            <a href="login.html">
+                <img src="right-to-bracket-solid.svg" alt="Logout">
+            </a>
+        </button>
+    </div>
+    <div class="con">
+        <div id="settingsModal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Settings</h2>
+        
+                <h3>Theme</h3>
+                <div>
+                    <input type="radio" id="theme-light" name="theme" value="light" checked>
+                    <label for="theme-light">Light</label>
+                </div>
+                <div>
+                    <input type="radio" id="theme-dark" name="theme" value="dark">
+                    <label for="theme-dark">Dark</label>
+                </div>
+        
+                <h3>Font Size</h3>
+                <select id="font-size">
+                    <option value="small">Small</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="large">Large</option>
+                </select>
+        
+                <h3>Notifications</h3>
+                <div>
+                    <input type="checkbox" id="notifications-enabled" checked>
+                    <label for="notifications-enabled">Enabled</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+       
+    
+</body>
+</html>
